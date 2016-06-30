@@ -1,0 +1,65 @@
+create databases tianxiang;
+
+
+
+create table company_user(
+
+company_id   int  auto_increment primary key,
+
+company_name varchar(100) not null,
+
+major_businesses  varchar(100)   not null,
+
+receiver_address   text         not null,
+
+cp_name  varchar(20)    not null,
+
+gender    int            default '-1',
+
+cp_birthday    DATE      default '2016-01-01',
+
+cp_phone_number varchar(20) not null,
+
+company_phone_number varchar(20) not null,
+
+cp_qq varchar(20) not null,    
+
+password varchar(30) not null
+
+);
+
+
+
+create table personal_user(
+
+person_id int primary key auto_increment,
+
+major_businesses varchar(100) not null,
+
+receiver_address text not null,
+
+person_name varchar(20) not null,
+
+gender int default '-1',
+
+birthday date default '2016-01-01',
+
+phone_number varchar(20) not null,
+
+qq varchar(20) not null,
+
+weixin varchar(20) not null,
+
+password varchar(30) not null
+
+);
+
+
+
+
+
+
+
+
+
+
